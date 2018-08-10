@@ -9,6 +9,9 @@ use Mix.Config
 config :oraculo,
   ecto_repos: [Oraculo.Repo]
 
+config :oraculo, GitHub,
+  host: System.get_env("GITHUB_HOST")
+
 # Configures the endpoint
 config :oraculo, OraculoWeb.Endpoint,
   url: [host: "localhost"],
